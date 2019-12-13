@@ -1,0 +1,44 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+            "responses": ["Hello. I am an anonomous Helper. I want to improve your happiness at work. We all have issues at work sometimes. Would you like to share what's on your mind?"]
+        },
+        {
+            "tag": "introduction",
+            "patterns": ["I'm worried", "I'm frustrated", "I'm angry","I'm sad","I can't explan"],
+            "responses": ["You know, that's perfectly fine. There are others who have experienced something similar and they did manage to find a way forward. Would you like to hear their stories?"]
+        },
+        {
+            "tag": "define_issue",
+            "patterns": ["A story would be great","Let's hear a story","What are stories?" ],
+            "responses": ["Before we start, I need to make sure I've understood you correctly. So would you say your problem is about [VALUE] or [VALUE]"]
+        },
+        {
+            "tag": "describe_old_story",
+            "patterns": ["Being ignored", "being put down", "being shouted at", "being humiliated in meetings"],
+            "responses": ["I'm sorry to hear that. But there is help. I'm now going to tell you a story about one of your colleagues and their experiences with <ISSUE_2>. They experienced problems with [ISSUE_2] and found [BEHAVIOUR_1] helpful. Would you like to hear more?"]
+        },
+        {
+            "tag": "hear_more",
+            "patterns": ["How do I find my sub-value?", "How did they resolve their issue?"],
+            "responses": ["But they found a way to think about it in a different way. They chose to use our core values of Simple, Personal and Fair as a starting point. And managed to find a way for those \"associated values\". Does that make sense?"]
+        },
+        {
+            "tag": "not_understanding",
+            "patterns": ["No, I don't understand", "I don't understand", "You've lost me", "I'm not following you"],
+            "responses": ["Ah, ok. Let me explain further. Associated values are linked to our main vlaues of Simple, Personal and Fair. For example \"Simple\" can also mean we should communicate clearly with our colleagues. But it can also mean we should be simple and clear with ourselves. One of your colleagues found that writing down their problem helped them by seeing in black and white what they were thinking, rather than trying to hit a moving target in their thoughts."]
+        },
+        {
+            "tag": "now_understand",
+            "patterns": ["I understand now"],
+            "responses": ["We typically need the following things at work: PURPOSE, RECOGNITION and CONNECTION. Typically if we are lacking one or more of those things we can feel below our best. Do you believe that?"]
+        },
+        {
+            "tag": "user_story",
+            "patterns": ["I felt I was ignored."],
+            "responses": ["That's awesome. Your experience and advice is very valuable. It will help others We thank you!"]
+        }
+    ]
+}
